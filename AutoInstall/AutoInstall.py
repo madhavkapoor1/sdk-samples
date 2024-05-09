@@ -7,7 +7,7 @@ The app can be manually triggered again by clearing out the description field in
 App settings can be configured in System > SDK Data."""
 
 from csclient import EventingCSClient
-from speedtest import Speedtest
+from speedtest_5G import Speedtest
 import time
 import datetime
 import json

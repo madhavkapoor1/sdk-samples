@@ -3,7 +3,7 @@
 from csclient import EventingCSClient
 import tornado.web
 import json
-from speedtest import Speedtest
+from speedtest_5G import Speedtest
 
 class MainHandler(tornado.web.RequestHandler):
     """Handles / endpoint requests."""

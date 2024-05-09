@@ -16,7 +16,7 @@ See readme.txt for details
 from csclient import EventingCSClient
 from threading import Thread
 import concurrent.futures
-from speedtest import Speedtest
+from speedtest_5G import Speedtest
 from geopy import distance
 from settings import settings
 import requests

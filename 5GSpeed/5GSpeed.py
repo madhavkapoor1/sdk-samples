@@ -35,7 +35,7 @@ In a few minutes, new results should populate.
 """
 
 from csclient import EventingCSClient
-from speedtest import Speedtest
+from speedtest_5G import Speedtest
 import time
 import json
 
@@ -56,6 +56,8 @@ def results_field_check(path, results, *args):
             cp.log('Initiating Speedtest due to cleared results...')
             speedtest()
         else:
+            """If the results parameter is not empty (meaning the field already contains speed test results),
+            logs a message providing instructions to clear the results manually:"""
             cp.log(f'5GSpeed ready. To start speedtest: put {results_path} ""')
         return
     except Exception as e:
@@ -89,10 +91,18 @@ def speedtest():
 cp = EventingCSClient('5GSpeed')
 try:
     cp.log('Starting...')
+    
+    """Wait for WAN to connect before starting speedtest."""
     while not cp.get('status/wan/connection_state') == 'connected':
         time.sleep(2)
+        
+    """Get results field path from SDK Data."""
     results_path = get_config('5GSpeed')
+    
+    """Check if results field is empty. If empty, run speedtest."""
     cp.on('put', results_path, results_field_check)
+    
+    """Get results field."""
     boot_results = cp.get(results_path)
     results_field_check(None, boot_results, None)
     time.sleep(999999)

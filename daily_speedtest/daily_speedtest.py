@@ -4,7 +4,7 @@ import time
 import json
 from datetime import datetime
 from csclient import EventingCSClient
-from speedtest import Speedtest
+from speedtest_5G import Speedtest
 
 # Hours of day to run speedtests. 24-hour format.  Default is 8am, 12pm, 4pm.
 testing_hours = [8, 12, 16]
