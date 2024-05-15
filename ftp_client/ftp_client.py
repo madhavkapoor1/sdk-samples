@@ -19,6 +19,8 @@ try:
 except OSError as msg:
     cp.log('Failed to open file: {}. error: {}'.format(TEMP_FILE, msg))
 
+fh = None
+
 try:
     # Connect to an FTP test server
     ftp = FTP('speedtest.tele2.net')
