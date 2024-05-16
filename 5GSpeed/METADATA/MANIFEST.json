@@ -1,0 +1,33 @@
+{
+    "app": {
+        "auto_start": true,
+        "date": "2024-05-09T13:58:51.323964",
+        "files": {
+            "5GSpeed.py": "edc1779a9bb4e309a8c5e4ef506471cab1c2d41bf9f3d8d4fa39d7246e8dcf0a",
+            "_csv.py": "b778711ec11f2d4e9395436fc369710cdacc49fdbfa762e66443a6e24d542bd1",
+            "csclient.py": "d854270f11d142bdc645517f5d76fced9ed670a8c2bbab038bc9692f7ee50baa",
+            "csv.py": "0f46b397bda6998a4b7083478f22cd02bd6454a3dd1219a5874562eb3784244d",
+            "package.ini": "089b87e14c5f6c49225c6709dbf57600a82c0438d7ecedda24b1f89b35a53186",
+            "readme.txt": "326825cf4d693831a2624beb0b0cb7912cfe233708a98c80635be792076a2f0f",
+            "speedtest_5G.py": "7e5a360b10050d0446a2afb42cd357f6d5eae8ea840b04897fdd71f332f404b1",
+            "start.sh": "c156eebd2e61bac62669727015612460fe3db8ccf9155d8233bcd83c3a35f99d",
+            "timeit.py": "d0884d28561a0dafce6492e8f526ad53b0ad49f38e9f124573c749a4941447f4"
+        },
+        "firmware_major": 7,
+        "firmware_minor": 23,
+        "name": "5GSpeed",
+        "notes": "Ookla speedtests",
+        "reboot": true,
+        "restart": true,
+        "uuid": "0973013f-e20b-42f8-a282-bbd63c6682e8",
+        "vendor": "5GSpeed",
+        "version_major": 0,
+        "version_minor": 2,
+        "version_patch": 0
+    },
+    "pmf": {
+        "version_major": 1,
+        "version_minor": 0,
+        "version_patch": 0
+    }
+}

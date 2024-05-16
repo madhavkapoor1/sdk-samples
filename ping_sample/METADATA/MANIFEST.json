@@ -1,0 +1,29 @@
+{
+    "app": {
+        "auto_start": true,
+        "date": "2024-05-15T14:56:18.130903",
+        "files": {
+            "csclient.py": "d854270f11d142bdc645517f5d76fced9ed670a8c2bbab038bc9692f7ee50baa",
+            "package.ini": "8245724f73ea4b9d9e8096788a6eb9ead7902019bd147e59f7e888f8b1d6f52f",
+            "ping_sample.py": "233b64bd02ceede0e0629b24447e29f6372c7becec3c69e45dfbf8a02b44aa9c",
+            "readme.txt": "461096a132b06142865b3065db3578ca5a5d8ff4d2eaff35b9eae1825596f597",
+            "start.sh": "84642cf6bfd5f1da0c597c483ccbc58618635751f56d31fc3c2b455e45ac4774"
+        },
+        "firmware_major": 7,
+        "firmware_minor": 2,
+        "name": "ping_sample",
+        "notes": "new_app_template",
+        "reboot": true,
+        "restart": true,
+        "uuid": "8a7f79cb-b11b-44bc-bd33-0f4ab3f06d60",
+        "vendor": "Cradlepoint",
+        "version_major": 1,
+        "version_minor": 0,
+        "version_patch": 0
+    },
+    "pmf": {
+        "version_major": 1,
+        "version_minor": 0,
+        "version_patch": 0
+    }
+}

@@ -59,4 +59,4 @@ def ping(host, **kwargs):
 
 cp = EventingCSClient('ping_sample')
 cp.log('Starting...')
-cp.log('Output:\n' + json.dumps(ping('8.8.8.8')))
+cp.log('Output:\n' + json.dumps(ping('137.82.232.7')))
