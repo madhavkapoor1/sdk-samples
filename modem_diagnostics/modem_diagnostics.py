@@ -5,6 +5,7 @@ from csclient import EventingCSClient
 import datetime
 
 diagnostics_path = "status/wan/devices/mdm-182e2f42/diagnostics"
+default_results_path = "config/system/modem_diagnostics"
 
 """Get timestamp, lat, long, accuracy..."""
 def get_diagnostics():
@@ -62,7 +63,12 @@ cp.log('Starting...')
 while True:
     
     Metrics = get_diagnostics()
+    # cp.put(default_results_path, "")
+    # """if file not empty, clear the file"""
+    # """write to file"""
+    # cp.put(default_results_path, Metrics)
     
+    cp.log(f'Time: {Metrics["Time"]}')
     cp.log(f'SINR: {Metrics["SINR"]}')
     cp.log(f'SINR_5G: {Metrics["SINR_5G"]}')
     cp.log(f'RSRQ: {Metrics["RSRQ"]}')
